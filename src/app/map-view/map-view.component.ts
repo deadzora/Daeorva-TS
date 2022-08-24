@@ -21,7 +21,7 @@ export class MapViewComponent implements AfterViewInit, OnInit {
     maxBounds:[[-79,-180],[79,180]]
   }
 
-  shapes: (Polygon | Marker) [] = [];
+  shapes: (Polygon | Marker | L.Layer) [] = [];
 
   ngAfterViewInit(){
     this.setupLeaflet();
